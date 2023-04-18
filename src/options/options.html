@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Options</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="options.css">
+    <style>
+        body {
+            font-family: 'Lato', Arial, sans-serif;
+            font-size: 14px;
+            padding: 20px;
+            width: 200px;
+
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        label > h3 {
+            padding-left: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1><strong>Extension Options</strong></h1>
+<label>
+    <input class="tgl tgl-flat" id="autofill-toggle" type="checkbox"/>
+    <label class="tgl-btn" for="autofill-toggle"></label>
+    <h3>Auto-solve Captchas</h3>
+</label>
+<label>
+    <input class="tgl tgl-flat" id="notifications-toggle" type="checkbox"/>
+    <label class="tgl-btn" for="notifications-toggle"></label>
+    <h3>Display notifications</h3>
+</label>
+<button id="save-button">Save</button>
+<script src="options.js"></script>
+</body>
+</html>
