@@ -5,7 +5,7 @@ function sendToastrMessage(title, message, message_type) {
 
 let captchaImage = document.getElementById('ImgCaptcha');
 if (captchaImage === null) {
-    console.log("A text captcha image was not detected on this webpage. If this is an error, submit an issue on GitHub.")
+    console.log("A text captcha image was not detected on this webpage. If this is an error, submit an issue at https://github.com/argo0n/MySAS-Assistant-Extension/issues.")
 } else {
     chrome.storage.sync.get("autofill", function(result) {
         const autofill_is_enabled = result.autofill;
