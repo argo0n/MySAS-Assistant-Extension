@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "SP MySAS Captcha Assistant",
+  "name": "SP MySAS Assistant",
   "content_scripts": [
     {
-      "matches": ["https://mysas2.sp.edu.sg/*", "https://myats.sp.edu.sg/*"],
+      "matches": ["https://mysas2.sp.edu.sg/*"],
       "js": ["src/contentScript/contentScript.js"]
     },
     {
-      "matches": ["https://mysas2.sp.edu.sg/*", "https://myats.sp.edu.sg/*"],
+      "matches": ["https://mysas2.sp.edu.sg/*"],
       "js": ["src/documentStart/documentStart.js"],
       "run_at": "document_start"
     }
@@ -45,7 +45,7 @@
         "external/jquery-3.6.4.min.js",
         "src/contentScript/InjectEventListener.js"
       ],
-      "matches": ["https://mysas2.sp.edu.sg/*", "https://myats.sp.edu.sg/*"]
+      "matches": ["https://mysas2.sp.edu.sg/*"]
     }
   ]
 }
